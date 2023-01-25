@@ -1,0 +1,15 @@
+#include <sys/types.h>
+#include <unistd.h>
+#include <sys/wait.h>
+#include <stdio.h>
+
+int main(int args, char *argv[
+printf("Child\n");
+sleep(10);
+}
+else{
+printf("Parent\n");
+wait(&status);
+printf("I am in parent process");
+}
+}
